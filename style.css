@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*, ::after, ::before{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: 	#111111;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: baseline;
+    background-color: 	#111111;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #FF7700;
+    
+}
+
+.header__logo{
+    color: #FF7700;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+    
+    margin-left: 5%;
+}
+
+.header__logo__icon{
+    background-color: #fff;
+    border-radius: 50%;
+    color: #FF7700;
+    width: 50px;
+    height: 50px;
+}
+
+.header__logo__link{
+    font-size: 36px;
+}
+
+.header__nav__list{
+    display: flex;
+    margin-left: 200px;
+}
+
+.header__nav__list li{
+    list-style: none;
+}
+
+.nav__link{
+    margin-left: 1em;
+    text-decoration: none;
+    color: #FF7700;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.secao{
+    color: #FF7700;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 0;
+    border-bottom: #FF7700 solid 1px;
+    
+}
+
+.secao:last-of-type{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 0;
+    width: 100%;    
+   
+}
+
+.card__container{
+    display:flex;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+
+}
+
+.card{
+    height: 70vh;
+    min-width: 23vw;
+    background-size: cover 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    scroll-padding-inline: 1em;
+    flex: 1;
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.card__content{
+    color: #fff;
+    height: 40vh;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    word-wrap: break-word;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.card__content.active{
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+}
+
+
+.card__content .card__title, .card__content .card__synopsis {
+    padding: 10px;
+
+}
+
+.card__content .card__action{
+    position: absolute;
+    bottom:3%;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sobre__container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50vw;
+    word-wrap: break-word;
+}
+
+.sobre__container h2, .sobre__container p{
+    padding: 10px;
+}
+
+
+
+.scroll-button{
+    background-color: rgba(0, 0, 0, 0.171);
+    color: #fff;
+    position: absolute;
+
+    right: 5px;
+    bottom: 30%;
+    height: 20vh;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/709/709586.png);
+}
+
+.scroll-buttonL{
+    background-color: rgba(0, 0, 0, 0.171);
+    background-image: url(https://cdn-icons.flaticon.com/png/512/2985/premium/2985161.png?token=exp=1651175311~hmac=76435f871d3728ed746015850ef20bb8);
+    color: #fff;
+    position: absolute;
+
+    left: 5px;
+    bottom: 30%;
+    height: 20vh;    
+}
+
+.scroll-arrow{
+    width: 50px;
+    height: 50px;
+    background-color:  rgba(0, 0, 0, 0.014);
+}
+
+.releases{
+    display: flex;
+}
